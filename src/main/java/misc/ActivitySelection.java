@@ -29,5 +29,6 @@ public class ActivitySelection {
         //int[] start = {10, 12, 20};
         //int[] finish = {20, 25, 30};
         printMaxActivities(start, finish);
+
     }
 }

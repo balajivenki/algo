@@ -9,8 +9,12 @@ public class LargestSumArray {
         int maxSoFar = array[0];
 
         for(int i=1;i<array.length;i++) {
-            maxEnding = Math.max(array[i], (maxEnding + array[i]));
+            maxEnding = maxEnding + array[i];
             maxSoFar = Math.max(maxSoFar, maxEnding);
+
+            if(maxEnding < 0) {
+                maxEnding = 0;
+            }
         }
 
         System.out.println(maxSoFar);

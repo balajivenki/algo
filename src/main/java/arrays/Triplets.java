@@ -33,7 +33,8 @@ public class Triplets {
     }
 
     public static void main(String[] args) {
-        int[] values = {0, -1, 2, -3, 1};
+        //int[] values = {0, -1, 2, -3, 1};
+        int[] values = {0, -1, 2};
         Triplets triplets = new Triplets();
         triplets.findTriplets(values, values.length);
     }
