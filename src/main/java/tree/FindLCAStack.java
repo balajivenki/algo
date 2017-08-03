@@ -57,6 +57,7 @@ public class FindLCAStack {
 
         if(node.data == data) {
             Stack<LCANode> stack = new Stack<>();
+            System.out.println("push: " + node.data);
             stack.push(node);
             return stack;
         }
@@ -65,11 +66,13 @@ public class FindLCAStack {
         Stack<LCANode> right = findPath(node.right, data);
 
         if(left != null) {
+            System.out.println("push left: " + node.data);
             left.push(node);
             return left;
         }
 
         if(right != null) {
+            System.out.println("push right: " + node.data);
             right.push(node);
             return right;
         }

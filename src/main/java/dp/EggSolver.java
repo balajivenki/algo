@@ -11,12 +11,12 @@ public class EggSolver {
     public static int solveUsingDp(int floors, int eggs) {
         final  int results[][] = new int[floors+1][eggs+1];
 
-        //when there is 1 egg left and there are n floors the number of min try is the actual floor value
+        //when there is 1 egg left and there are n floors the number.UniqueNumber of min try is the actual floor value
         for(int i=0;i<floors+1;i++) {
             results[i][1] = i;
         }
 
-        //when there is only one floor irrespctive of number of eggs we have the number of try is just 1
+        //when there is only one floor irrespctive of number.UniqueNumber of eggs we have the number.UniqueNumber of try is just 1
         for(int i=0;i<eggs+1;i++) {
             results[1][i] = 1;
         }

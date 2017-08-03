@@ -14,7 +14,7 @@ public class DecodeString {
         Stack<Character> characterStack = new Stack<>();
 
         for(int i = 0; i< str.toCharArray().length;i++) {
-            if(Character.isDigit(str.charAt(i))) {//push integer number
+            if(Character.isDigit(str.charAt(i))) {//push integer number.UniqueNumber
                 numberStack.push(Character.getNumericValue(str.charAt(i)));
             } else {//push all chars except the closing one
                 if(str.charAt(i) != ']') {
